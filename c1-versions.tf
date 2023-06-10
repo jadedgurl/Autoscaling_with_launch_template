@@ -31,3 +31,5 @@ $HOME/.aws/credentials
 resource "random_pet" "this" {
   length = 2
 }
+# Adding Backend as S3 for Remote State Storage
+backend "s3" { } 
